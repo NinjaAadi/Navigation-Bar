@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+#navbar{
+    padding-top:10px;
+    width:100%;
+    height:4em;
+}
+#nav-list{
+    list-style: none;
+}
+#navbar-elements li{
+    position: relative;
+    margin-top:5px;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid #008080;
+    padding:11px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:15px;
+    margin-left:50px;
+    font-size: 1em;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+    font-family: 'Noto Sans';
+    cursor: pointer;
+     z-index:10;
+} 
+#navbar-elements li:hover{
+    background:rgba(0,128,128,0.9);
+    color:white;
+}  
+#navbar-elements{
+    position: absolute;
+    right:8%;
+}
+#cross-button{
+    position: fixed;
+    margin-top:8px;
+    margin-left:15px;
+    cursor: pointer;
+    display: none;
+}
+#btn1{
+    width:35px;
+    height:5px;
+    background-color: rgba(0,0,0,0.7);
+    display: block;
+    transition: all 500ms linear;
+}
+#btn2{
+    width:35px;
+    height:5px;
+    background-color: rgba(0,0,0,0.7);
+    display: block;
+    margin-top:3px;
+    transition: all 500ms linear;
+}
+#btn3{
+    width:35px;
+    height:5px;
+    background-color: rgba(0,0,0,0.7);
+    display: block;
+    margin-top:3px;
+    transition: all 500ms linear;
+}
+
+@media only screen and (max-width:930px){
+    #cross-button{
+        display:inline-block;
+        margin-left:calc(30px - 1%);
+    }
+    #navbar-elements{
+        margin-top:40px;
+        width:100%;
+        display:none;
+        justify-content:center;
+        right:3%!important;
+        transition: display 2ms ease-in-out;
+    }
+    #navbar-elements li{
+        display:block; 
+        width:90%;
+        text-align:center;
+    }
+   
+}
+@media only screen and (max-width:700px){
+    #navbar-elements{
+            right:5%!important;
+           
+    }
+}
+@media only screen and (max-width:524px){
+    #navbar-elements{
+            right:7%!important;
+    }
+}
+@media only screen and (max-width:462px){
+    #navbar-elements{
+            right:9.5%!important;
+    }
+}
+@media only screen and (max-width:400px){
+    #navbar-elements{
+            right:calc(10% + (1%))!important;
+    }
+}
+@media only screen and (max-width:370px){
+    #navbar-elements{
+            right:calc(11% + (1%))!important;
+    }
+}
+@media only screen and (max-width:346px){
+    #navbar-elements{
+            right:calc(12% + (1%))!important;
+    }
+}
